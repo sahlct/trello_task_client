@@ -5,7 +5,13 @@ import { Link } from 'react-router-dom'
 import { FiUsers } from 'react-icons/fi'
 import { MdOutlineViewColumn } from 'react-icons/md'
 
-const fetcher = (url: string) => axios.get(url, { withCredentials: true }).then(r => r.data)
+const fetcher = (url: string) => {
+  const token = localStorage.getItem("token")
+  return axios.get(url, {
+    withCredentials: true,
+    headers: token ? { Authorization: `Bearer ${token}` } : {}
+  }).then(r => r.data)
+}
 
 export default function Dashboard() {
   const base = import.meta.env.VITE_API_BASE + '/api/boards'
