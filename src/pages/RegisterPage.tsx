@@ -29,14 +29,14 @@ export default function RegisterPage() {
         <h1 className="text-3xl font-bold text-gray-700 mb-6 text-center">Create Your Account</h1>
         <form onSubmit={submit} className="space-y-4">
           <input
-            className="input bg-gray-300 text-white placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+            className="input bg-gray-300 text-black placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
             placeholder="Name"
             value={name}
             onChange={e => setName(e.target.value)}
             required
           />
           <input
-            className="input bg-gray-300 text-white placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+            className="input bg-gray-300 text-black placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
             placeholder="Email"
             type="email"
             value={email}
@@ -44,7 +44,7 @@ export default function RegisterPage() {
             required
           />
           <input
-            className="input bg-gray-300 text-white placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+            className="input bg-gray-300 text-black placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
             placeholder="Password"
             type="password"
             value={password}

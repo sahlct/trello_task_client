@@ -29,7 +29,7 @@ export default function LoginPage() {
         <h1 className="text-3xl font-bold text-gray-700 mb-6 text-center">Welcome Back</h1>
         <form onSubmit={submit} className="space-y-4">
           <input
-            className="input bg-gray-300 text-white placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+            className="input bg-gray-300 text-black placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
             placeholder="Email"
             type="email"
             value={email}
@@ -37,7 +37,7 @@ export default function LoginPage() {
             required
           />
           <input
-            className="input bg-gray-300 text-white placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
+            className="input bg-gray-300 text-black placeholder-gray-400 border-gray-600 focus:ring-2 focus:ring-teal-500 focus:border-teal-500"
             placeholder="Password"
             type="password"
             value={password}
