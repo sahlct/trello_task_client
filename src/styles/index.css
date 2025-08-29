@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* simple layout helpers */
+html,body,#root { height:100%; }
+body { @apply bg-gray-100 text-gray-900; }
+.card { @apply bg-white rounded-xl shadow p-4; }
+.input { @apply border border-gray-300 rounded px-3 py-2 w-full; }
+.btn { @apply px-3 py-2 rounded; }
+.btn-primary { @apply bg-blue-600 text-white hover:bg-blue-700; }
